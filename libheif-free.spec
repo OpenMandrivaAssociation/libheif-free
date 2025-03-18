@@ -22,7 +22,7 @@ BuildRequires:  pkgconfig(libsharpyuv)
 #BuildRequires:	pkgconfig(libde265)
 BuildRequires:	pkgconfig(SvtAv1Enc)
 BuildRequires:	pkgconfig(dav1d)
-BuildRequires:  pkgconfig(kvazaar)
+#BuildRequires:  pkgconfig(kvazaar)
 #BuildRequires:	kvazaar
 BuildRequires:	pkgconfig(rav1e)
 #BuildRequires:	pkgconfig(x265)
