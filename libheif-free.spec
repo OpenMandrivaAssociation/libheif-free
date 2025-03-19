@@ -19,22 +19,24 @@ BuildRequires:  cmake
 BuildRequires:	ffmpeg-devel
 BuildRequires:  pkgconfig(aom)
 BuildRequires:  pkgconfig(libsharpyuv)
-#BuildRequires:	pkgconfig(libde265)
 BuildRequires:	pkgconfig(SvtAv1Enc)
 BuildRequires:	pkgconfig(dav1d)
-#BuildRequires:  pkgconfig(kvazaar)
-#BuildRequires:	kvazaar
 BuildRequires:	pkgconfig(rav1e)
-#BuildRequires:	pkgconfig(x265)
 BuildRequires:	pkgconfig(openjph)
 BuildRequires:	pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libopenjp2)
 BuildRequires:	pkgconfig(libpng)
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
+
+# BR from restricted. Disabled in free version.
+#BuildRequires:	pkgconfig(x265)
+#BuildRequires:  pkgconfig(kvazaar)
+#BuildRequires:	kvazaar
+#BuildRequires:	pkgconfig(libde265)
 #BuildRequires:	pkgconfig(libvvdec)
 #BuildRequires:	pkgconfig(libvvenc)
 #BuildRequires:	vvdec
 #BuildRequires:	pkgconfig(uvg266)
-BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 #Requires:	libde265
 #Requires:	x265
 
@@ -62,6 +64,7 @@ Summary:	Development files for %{name}
 Group:		Development/C++
 Requires:	%{libname} = %{EVRD}
 Provides:	heif-devel = %{EVRD}
+Provides:	heif-free-devel = %{EVRD}
 
 %description -n %{devname}
 The %{devname} package contains libraries and header files for
