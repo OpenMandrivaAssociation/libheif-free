@@ -16,6 +16,7 @@ URL:		https://www.libheif.org/
 Source0:	https://github.com/strukturag/libheif/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:	make
 BuildRequires:	ffmpeg-devel
 BuildRequires:  pkgconfig(aom)
 BuildRequires:  pkgconfig(libsharpyuv)
